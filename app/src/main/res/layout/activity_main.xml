@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <TextView
+            android:id="@+id/resultado2"
+            android:layout_width="81dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="5dp"
+            android:text="0"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultado3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.834" />
+
+        <TextView
+            android:id="@+id/resultado3"
+            android:layout_width="81dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="0"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultado4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultado2" />
+
+        <TextView
+            android:id="@+id/resultado4"
+            android:layout_width="81dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="100dp"
+            android:text="0"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnResetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginBottom="5dp"
+            android:text="Reset All"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnReset1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toTopOf="@+id/btnReset2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.328" />
+
+        <Button
+            android:id="@+id/btnReset2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toTopOf="@+id/btnReset3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnReset1" />
+
+        <Button
+            android:id="@+id/btnReset3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toTopOf="@+id/btnReset4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnReset2" />
+
+        <Button
+            android:id="@+id/btnReset4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="310dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.983" />
+
+        <Button
+            android:id="@+id/btnIncremento3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="+1"
+            app:layout_constraintBottom_toTopOf="@+id/btnIncremento4"
+            app:layout_constraintEnd_toStartOf="@+id/btnReset3"
+            app:layout_constraintTop_toBottomOf="@+id/btnIncremento2" />
+
+        <Button
+            android:id="@+id/btnIncremento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="+1"
+            app:layout_constraintBottom_toTopOf="@+id/btnIncremento3"
+            app:layout_constraintEnd_toStartOf="@+id/btnReset2"
+            app:layout_constraintTop_toBottomOf="@+id/btnIncremento1" />
+
+        <Button
+            android:id="@+id/btnIncremento4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="366dp"
+            android:text="+1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnReset4"
+            app:layout_constraintTop_toBottomOf="@+id/btnIncremento3" />
+
+        <Button
+            android:id="@+id/btnIncremento1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="+1"
+            app:layout_constraintBottom_toTopOf="@+id/btnIncremento2"
+            app:layout_constraintEnd_toStartOf="@+id/btnReset1"
+            app:layout_constraintTop_toBottomOf="@+id/btnResetAll" />
+
+        <TextView
+            android:id="@+id/resultado1"
+            android:layout_width="81dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="0"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultado2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="10dp"
+            android:text="Total global:"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/resultado3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resultadoGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="40dp"
+            android:text="0"
+            android:textSize="60sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
